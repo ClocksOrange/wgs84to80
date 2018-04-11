@@ -10,8 +10,56 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.administrator.gws84_to_80.MainActivity">
 
-    <TextView
+
+    <EditText
+        android:hint="输入经度"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="88dp"
+        android:id="@+id/input_B" />
+
+    <EditText
+        android:hint="输入维度"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="55dp"
+        android:layout_marginEnd="55dp"
+        android:id="@+id/input_L"
+        android:layout_alignTop="@+id/input_B" />
+
+    <Button
+        android:text="Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button2" />
+
+    <EditText
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_L"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/input_H" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignLeft="@+id/input_H"
+        android:layout_alignStart="@+id/input_H"
+        android:layout_marginBottom="96dp"
+        android:id="@+id/textView13" />
+
+
 </RelativeLayout>
